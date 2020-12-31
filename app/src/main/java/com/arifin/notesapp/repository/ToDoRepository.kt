@@ -7,6 +7,7 @@ import com.arifin.notesapp.model.ToDoData
 class ToDoRepository(private val toDoDao: ToDoDao) {
     val getAllData: LiveData<List<ToDoData>> = toDoDao.getAllData()
     val sortByHighPriority: LiveData<List<ToDoData>> = toDoDao.sortByHighPriority()
+    val sortByMediumPriotity: LiveData<List<ToDoData>> = toDoDao.sortByMediumPriority()
     val sortByLowPriority: LiveData<List<ToDoData>> = toDoDao.sortByLowPriority()
 
     suspend fun insertData(toDoData: ToDoData){

@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.arifin.notesapp.ui.list.ListFragment"
-        android:label="ListFragment"
+        android:label="All Notes"
         tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_addFragment"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.arifin.notesapp.ui.add.AddFragment"
-        android:label="fragment_add"
+        android:label="Add note "
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.arifin.notesapp.ui.update.UpdateFragment"
-        android:label="fragment_update"
+        android:label="Update note"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"

@@ -63,6 +63,9 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
             R.id.menu_priority_hight -> {toDoViewModel.sortByHighPriority.observe(this, Observer {
                 adapter.setData(it)
             })}
+            R.id.menu_priority_medium -> {toDoViewModel.sortByMediumPriority.observe(this, Observer {
+                adapter.setData(it)
+            })}
             R.id.menu_priority_low -> {toDoViewModel.sortByLowPriority.observe(this, Observer {
                 adapter.setData(it)
             })}
